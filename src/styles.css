@@ -1,10 +1,20 @@
 :root {
-    --color-primary: #EAA34D
-    --color-secondary: #EDEDF4
-    --color-text: #231942
-    
-}/* You can add global styles to this file, and also import other style files */
+  --color-primary: #eaa34d;
+  --color-secondary: #ededf4;
+  --color-text-800: #231942;
+  --color-text-600: #5e548e;
+  --color-text-500: #9f86c0;
+} /* You can add global styles to this file, and also import other style files */
 
 body {
-    background-color: white; 
+  background-color: var(--color-secondary);
+  font-family: "DM Sans", sans-serif;
+  color: var(--color-text-800);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Nova Mono", monospace;
 }
