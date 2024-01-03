@@ -1,10 +1,11 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, ButtonComponent],
   template: `
     <header>
       <div class="container">
@@ -12,11 +13,23 @@ import { Component } from '@angular/core';
           <div class="hero-text">
             <h1>Nadine Thêry</h1>
             <h2>Frontend Developer</h2>
+            <app-button title="Download CV"></app-button>
           </div>
           <div class="hero-background">
             <div class="hero-background-layer"></div>
             <div class="hero-img-container">
-              <img ngSrc="assets/header-desktop.png" fill />
+              <img
+                class="desktop-image"
+                ngSrc="assets/header-desktop.png"
+                fill
+                priority
+              />
+              <img
+                class="mobile-image"
+                ngSrc="assets/mobile-hero.png"
+                fill
+                priority
+              />
             </div>
           </div>
         </div>
@@ -24,6 +37,9 @@ import { Component } from '@angular/core';
     </header>
   `,
   styles: `
+  app-button {
+    margin-top: 32px;
+  }
   .container {
     width: 100%; 
     height: 500px; 
@@ -92,6 +108,10 @@ import { Component } from '@angular/core';
     margin: 0; 
     color: var(--color-text-50)
   }
+  .mobile-image {
+      display: none;
+      object-position: bottom left; 
+    }
 
   @media (max-width: 768px) {
     .hero-background-layer {
@@ -110,6 +130,12 @@ import { Component } from '@angular/core';
   .hero-background { 
     justify-content: center ;
   }
+    .desktop-image {
+      display: none;
+    }
+    .mobile-image {
+      display: flex;
+    }
   }
   `,
 })

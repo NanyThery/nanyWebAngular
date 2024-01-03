@@ -17,6 +17,8 @@
   );
   --font-xs: 0.75rem;
   --font-s: 0.875rem;
+  --primary-font: "DM Sans", sans-serif;
+  --secondary-font: "Nova Mono", monospace;
 } /* You can add global styles to this file, and also import other style files */
 
 body {
@@ -25,7 +27,7 @@ body {
   color: var(--color-text-80);
   margin: 0;
   padding: 0;
-  background: var(--gradient-primary);
+  background: var(--color-background-gray);
 }
 
 h1,

@@ -45,7 +45,7 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
   footer {
     width: 100%; 
     display: flex; 
-    position: absolute; 
+    position: fixed; 
     bottom: 0;
     left:0;
   }
@@ -66,6 +66,7 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
     justify-content: flex-end;
     align-items: center;
     flex-flow: column; 
+    overflow: hidden; 
   }
   .footer-text {
     font-size: var(--font-xs); 
@@ -94,21 +95,21 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
     object-fit: cover;
     height: 100%;
     width: auto;  
-    object-position: left bottom;
+    
   }
   
 
   @media (max-width: 768px) {
     .footer-image {
     width: 100px;  
-    height: 250px; 
+    height: 200px; 
   }
   .footer-image img {
-    object-position: -100px;
+    object-position: -70px; 
   }
 
   footer::before {
-    height: 200px; 
+    height: 175px; 
   }
   }
   `,
