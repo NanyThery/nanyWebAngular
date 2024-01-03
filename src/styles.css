@@ -8,6 +8,12 @@
   --color-white: #fcfcff;
   --color-black: #140e24;
   --max-read-length: 800px;
+  --gradient-primary: linear-gradient(
+    180deg,
+    #ffdbaf 0%,
+    #ededf4 52.08%,
+    #fff 97.92%
+  );
 } /* You can add global styles to this file, and also import other style files */
 
 body {
@@ -16,9 +22,19 @@ body {
   color: var(--color-text-80);
   margin: 0;
   padding: 0;
+  background: var(--gradient-primary);
 }
 
 h1,
 h2 {
   font-family: "Nova Mono", monospace;
 }
+
+/* Breakpoints */
+/* SM */
+
+/* sm	@media (min-width: 640px) { ... }	≥640px
+md	@media screen and (min-width: 768px)	≥768px
+lg	@media screen and (min-width: 1024px)	≥1024px
+xl	@media screen and (min-width: 1280px)	≥1280px
+2xl	@media screen and (min-width: 1536px)	≥1536px */

@@ -15,7 +15,9 @@ import { Component } from '@angular/core';
           </div>
           <div class="hero-background">
             <div class="hero-background-layer"></div>
-            <img ngSrc="assets/header-desktop.png" height="400" width="450" />
+            <div class="hero-img-container">
+              <img ngSrc="assets/header-desktop.png" fill />
+            </div>
           </div>
         </div>
       </div>
@@ -38,13 +40,13 @@ import { Component } from '@angular/core';
     display: flex; 
   }
   .hero-text {
-    padding-top: 30px; 
+    
     width: 100%; 
     display: flex; 
     height: 100%;
     flex-flow: column; 
     justify-content: center;
-    z-index: 1; 
+    z-index: 2; 
   }
 
   .hero-background-layer {
@@ -55,6 +57,7 @@ import { Component } from '@angular/core';
     position: absolute;
     bottom: 0; 
     right: 0; 
+    z-index: 1;
   }
 
   .hero-background {
@@ -66,6 +69,19 @@ import { Component } from '@angular/core';
     justify-content: flex-end ;
     align-items: flex-end;
     width: 100%; 
+    
+  }
+
+  .hero-image-container{
+    height: 100%;
+    width: 100%;     
+  }
+  img {
+    object-fit: contain;
+    object-position: right bottom;
+    width: 100%;
+    height: auto; 
+    
   }
 
   h1 {
@@ -83,12 +99,12 @@ import { Component } from '@angular/core';
     }
     h2 {
     margin: 0; 
-    color: var(--color-text-600)
+    color: var(--color-text-60)
   }
     .hero-text {
     text-align: center; 
     align-items: center; 
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .hero-background { 
