@@ -1,15 +1,19 @@
 :root {
   --color-primary: #eaa34d;
   --color-secondary: #ededf4;
-  --color-text-800: #231942;
-  --color-text-600: #5e548e;
-  --color-text-500: #9f86c0;
+  --color-text-80: #231942;
+  --color-text-70: #38286a;
+  --color-text-60: #5e548e;
+  --color-text-50: #9f86c0;
+  --color-white: #fcfcff;
+  --color-black: #140e24;
+  --max-read-length: 800px;
 } /* You can add global styles to this file, and also import other style files */
 
 body {
-  background-color: var(--color-secondary);
+  background-color: white;
   font-family: "DM Sans", sans-serif;
-  color: var(--color-text-800);
+  color: var(--color-text-80);
   margin: 0;
   padding: 0;
 }

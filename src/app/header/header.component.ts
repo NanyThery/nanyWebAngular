@@ -9,13 +9,13 @@ import { Component } from '@angular/core';
     <header>
       <div class="container">
         <div class="row">
-          <div class="hero-background">
-            <div class="hero-background-layer"></div>
-            <img ngSrc="assets/header-desktop.png" height="400" width="450" />
-          </div>
           <div class="hero-text">
             <h1>Nadine Thêry</h1>
             <h2>Frontend Developer</h2>
+          </div>
+          <div class="hero-background">
+            <div class="hero-background-layer"></div>
+            <img ngSrc="assets/header-desktop.png" height="400" width="450" />
           </div>
         </div>
       </div>
@@ -27,12 +27,15 @@ import { Component } from '@angular/core';
     height: 500px; 
     display: flex; 
     justify-content: center; 
+    background: white; 
+    position: relative; 
   }
   .row {
     width: 100%;
     height: 100%;
-    max-width: 800px; 
-    position:relative; 
+    max-width: var(--max-read-length); 
+    position: relative; 
+    display: flex; 
   }
   .hero-text {
     padding-top: 30px; 
@@ -41,10 +44,11 @@ import { Component } from '@angular/core';
     height: 100%;
     flex-flow: column; 
     justify-content: center;
+    z-index: 1; 
   }
 
   .hero-background-layer {
-    background-color: var(--color-secondary);
+    background-color: white;
     opacity: 0.2;
     width: 100%;
     height: 100%;
@@ -62,20 +66,20 @@ import { Component } from '@angular/core';
     justify-content: flex-end ;
     align-items: flex-end;
     width: 100%; 
-    z-index: -1;
   }
+
   h1 {
     font-size: 4rem;
     margin: 0; 
   }
   h2 {
     margin: 0; 
-    color: var(--color-text-500)
+    color: var(--color-text-50)
   }
 
   @media (max-width: 768px) {
     .hero-background-layer {
-      opacity: 0.5;
+      opacity: 0.6;
     }
     h2 {
     margin: 0; 
@@ -85,6 +89,10 @@ import { Component } from '@angular/core';
     text-align: center; 
     align-items: center; 
     justify-content: flex-start;
+  }
+
+  .hero-background { 
+    justify-content: center ;
   }
   }
   `,
