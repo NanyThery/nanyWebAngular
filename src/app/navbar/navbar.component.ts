@@ -186,7 +186,7 @@ import { Component } from '@angular/core';
   `,
 })
 export class NavbarComponent {
-  isMenuOpen = true;
+  isMenuOpen = false;
   menuItems = [
     {
       title: 'Resume',

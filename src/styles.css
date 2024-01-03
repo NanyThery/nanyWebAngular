@@ -5,6 +5,7 @@
   --color-text-70: #38286a;
   --color-text-60: #5e548e;
   --color-text-50: #9f86c0;
+  --color-background-gray: #ededf4;
   --color-white: #fcfcff;
   --color-black: #140e24;
   --max-read-length: 800px;
@@ -14,6 +15,8 @@
     #ededf4 52.08%,
     #fff 97.92%
   );
+  --font-xs: 0.75rem;
+  --font-s: 0.875rem;
 } /* You can add global styles to this file, and also import other style files */
 
 body {
