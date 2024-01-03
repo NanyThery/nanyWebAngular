@@ -32,7 +32,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="container">
       <nav class="menu-desktop">
-        <a href="/">
+        <a class="menu-logo-container" href="/">
           <img ngSrc="assets/logo-nt.png" height="48" width="48" />
         </a>
         <div class="menu-items">
@@ -63,7 +63,21 @@ import { Component } from '@angular/core';
         <div
           [@openClose]="isMenuOpen ? 'true' : 'false'"
           class="menu-mobile-panel"
-        ></div>
+        >
+          <div class="menu-mobile-items">
+            @for (item of menuItems; track item.title) {
+            <a
+              (click)="toggleMenu()"
+              class="menu-item"
+              href="{{ item.link }}"
+              >{{ item.title }}</a
+            >
+            }
+            <div class="menu-mobile-bottom-image">
+              <img ngSrc="assets/show-sticker.png" fill />
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
   `,
@@ -78,7 +92,7 @@ import { Component } from '@angular/core';
     z-index: 99; 
   }
   nav {
-    padding: 10px 0;
+    
     width: 100%;
     display: flex; 
     gap: 24px; 
@@ -103,9 +117,11 @@ import { Component } from '@angular/core';
     color: var(--color-secondary); 
   }
 
+  .menu-logo-container {
+    padding: 10px; 
+  }
   .menu-mobile {
-    display: none; 
-
+    display: none;
   }
 
   .menu-mobile-activator {
@@ -115,6 +131,15 @@ import { Component } from '@angular/core';
     height: 48px;
     position: relative; 
   }
+  .menu-mobile-items {
+    height: 100%; 
+    display: flex; 
+    flex-flow: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 24px; 
+    padding: 24px;
+  }
   .menu-mobile-panel {
     position: absolute; 
     top: 0;
@@ -123,6 +148,21 @@ import { Component } from '@angular/core';
     height: 100vh;
     background: var(--gradient-primary);
   }
+.menu-mobile-bottom-image {
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 150px;
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  
+}
+.menu-mobile-bottom-image > img{
+  object-fit: contain;
+  object-position: left bottom; 
+}
 
   .activator-logo {
     position: absolute; 
@@ -146,7 +186,7 @@ import { Component } from '@angular/core';
   `,
 })
 export class NavbarComponent {
-  isMenuOpen = false;
+  isMenuOpen = true;
   menuItems = [
     {
       title: 'Resume',
