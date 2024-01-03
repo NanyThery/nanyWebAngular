@@ -1,0 +1,104 @@
+{
+  "devJobs": [
+    {
+      "organization": {
+        "name": "Umamicart Ltd",
+        "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/dcabcdee-18c6-49bf-83cd-2f077f04a193_linkedin-photo-34648.linkedin-photo-34648"
+      },
+      "roles": [
+        {
+          "name": "Frontend Developer",
+          "startDate": "2021-09-01",
+          "description": "Building website functionalities, and headless apps for Shopify. American company based in New York.",
+          "skills": [
+            "React",
+            "React Native",
+            "Remix",
+            "Liquid",
+            "Shopify",
+            "GraphQL",
+            "Cloud Functions"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": {
+        "name": "urbanData Analytics (Alantra Group)",
+        "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/21e7d2a6-f048-4437-9c55-51e1a212796f_linkedin-photo-34648.linkedin-photo-34648"
+      },
+      "roles": [
+        {
+          "name": "Front-End Developer",
+          "startDate": "2020-12-01",
+          "finishDate": "2021-07-31",
+          "description": "Build UI and new features for the platform. Build components and maintain the Bento library.",
+          "skills": ["React"]
+        }
+      ]
+    },
+    {
+      "organization": {
+        "name": "Sonneil Homes",
+        "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/ac1a47b5-6804-4187-bbb6-e63c1e1db7ee_linkedin-photo-34648.linkedin-photo-34648"
+      },
+      "roles": [
+        {
+          "name": "Salesforce & Front-End Developer",
+          "startDate": "2019-09-01",
+          "finishDate": "2020-12-31",
+          "description": "Front-end & backend development for Salesforce (in-house), Website maintenance and development.",
+          "skills": ["React", "Vue", "Apex", "SOQL"]
+        }
+      ]
+    },
+    {
+      "organization": {
+        "name": "Sonneil Homes and More",
+        "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/ac1a47b5-6804-4187-bbb6-e63c1e1db7ee_linkedin-photo-34648.linkedin-photo-34648"
+      },
+
+      "roles": [
+        {
+          "name": "Chief Marketing Officer (CMO)",
+          "startDate": "2018-09-01",
+          "finishDate": "2019-03-31",
+          "description": "Supervising and strategy planification of content, SEO, web, UX and PPC"
+        },
+        {
+          "name": "Chief Operations Officer (COO)",
+          "startDate": "2014",
+          "finishDate": "2019",
+          "description": "Supervising and strategy planification of content, SEO, web, UX and PPC"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "name": "Solvia (Sabadell Bank Group)",
+        "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/8bc1ac06-f757-4dde-8086-10b2f6bf71b8_linkedin-photo-34648.linkedin-photo-34648"
+      },
+      "roles": [
+        {
+          "name": "Several Positions",
+          "startDate": "2009",
+          "finishDate": "2014",
+          "description": "International Customer Service, New Developments Publishing Manager, International Commercial Direction Assistant"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "name": "D.I.A. Desarrollos informáticos para la Administración"
+      },
+      "roles": [
+        {
+          "name": "User Support and Training",
+          "startDate": "2007",
+          "finishDate": "2009",
+          "description": "User Support and Training for users of the software developed by the company."
+        }
+      ]
+    }
+  ]
+}

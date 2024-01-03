@@ -1,0 +1,171 @@
+{
+  "relevantLinks": [
+    {
+      "type": "linkedin",
+      "URL": "https://linkedin.com/in/nadinethery"
+    },
+    {
+      "type": "github",
+      "URL": "https://github.com/NanyThery"
+    },
+    {
+      "type": "email",
+      "URL": "mailto:nadinethery@gmail.com"
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "score": 5
+    },
+    {
+      "name": "React Native",
+      "score": 4
+    },
+    {
+      "name": "NextJS",
+      "score": 3
+    },
+    {
+      "name": "Remix",
+      "score": 3
+    },
+    {
+      "name": "Angular",
+      "score": 3
+    },
+    { "name": "Typescript", "score": 2 },
+    {
+      "name": "Liquid (Shopify)",
+      "score": 5
+    },
+    {
+      "name": "GraphQL & Apollo",
+      "score": 4
+    },
+    {
+      "name": "REST APIs",
+      "score": 5
+    },
+    {
+      "name": "Firebase",
+      "description": "Remote Config, Functions, Firestore",
+      "score": 3
+    },
+    {
+      "name": "Google Cloud",
+      "description": "Cloud Functions, Cloud Run",
+      "score": 3
+    },
+    {
+      "name": "NodeJS",
+      "description": "I can build an API!",
+      "score": 3
+    }
+  ],
+  "other-skills": [
+    {
+      "name": "UX/UI Design",
+      "score": 3
+    },
+    {
+      "name": "Documentation & Technical Writing",
+      "description": "I love sharing knowledge!",
+      "score": 5
+    }
+  ],
+  "tools-platforms": [
+    {
+      "name": "VSCode",
+      "score": 5
+    },
+    {
+      "name": "Git",
+      "score": 4
+    },
+    {
+      "name": "Sentry",
+      "score": 3
+    },
+    {
+      "name": "Figma",
+      "description": "I can build prototypes!",
+      "score": 4
+    },
+    {
+      "name": "Shopify Ecosystem",
+      "description": "I can build a store with Liquid or headless, build apps with Shopify APIs, or private checkout extensions",
+      "score": 4
+    }
+  ],
+
+  "soft-skills": [
+    {
+      "name": "Change technologies",
+      "description": "I'm used to and I like working with several technologies at the time."
+    },
+    {
+      "name": "Communication",
+      "description": "I feel comfortable about speaking in public, explaining technical concepts to non-technical people, and writing technical documentation. I am very focused on communication between teams of the same company."
+    },
+    {
+      "name": "Problem solving",
+      "description": "I like to solve problems and I'm used to do it in a creative way."
+    },
+    {
+      "name": "Teamwork & Empathy",
+      "description": "I always give my all to ensure a great working environment for al the people around me."
+    },
+    {
+      "name": "Organization",
+      "description": "I like to keep things organized and I'm used to work with agile methodologies."
+    }
+  ],
+  "languages": [
+    {
+      "fullName": "Catalan / Valencian",
+      "score": 4
+    },
+    {
+      "fullName": "English",
+      "score": 4
+    },
+    {
+      "fullName": "Spanish",
+      "score": 5
+    }
+  ],
+
+  "studies": [
+    {
+      "name": "Google UX Design Professional Certificate",
+      "description": "200hs course about UX Design, with a final project about a mobile app for a non-profit organization.",
+      "startDate": "2023-01-01",
+      "finishDate": "2023-06-01",
+      "institution": {
+        "name": "Google by Coursera",
+        "URL": "https://www.coursera.org/account/accomplishments/professional-cert/9LJ43HACM8CK?utm_product=prof"
+      }
+    },
+    {
+      "name": "Certificate of Higher Education for Web Applications Development (FP DAW)",
+      "description": "Spanish FP DAW (Desarrollo de Aplicaciones Web) is a 2 years official degree about web applications development.",
+      "startDate": "2019-09-01",
+      "finishDate": "2021-06-01",
+      "institution": {
+        "name": "Ilerna Online",
+        "URL": "https://www.ilerna.es/"
+      }
+    },
+    {
+      "name": "Degree in Political Sciences",
+      "startDate": "2007-09-01",
+      "finishDate": "2013-06-01",
+      "description": "Extraordinary award for the best academic record of the 2012/2013 promotion.",
+      "institution": {
+        "name": "Universidad Miguel Hernández de Elche",
+        "URL": "https://www.umh.es/"
+      }
+    }
+  ]
+}
