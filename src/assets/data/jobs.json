@@ -1,5 +1,5 @@
 {
-  "devJobs": [
+  "jobs": [
     {
       "organization": {
         "name": "Umamicart Ltd",
@@ -57,7 +57,6 @@
         "name": "Sonneil Homes and More",
         "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/ac1a47b5-6804-4187-bbb6-e63c1e1db7ee_linkedin-photo-34648.linkedin-photo-34648"
       },
-
       "roles": [
         {
           "name": "Chief Marketing Officer (CMO)",
