@@ -27,14 +27,55 @@ body {
   color: var(--color-text-80);
   margin: 0;
   padding: 0;
-  background: var(--color-background-gray);
+  background: white;
 }
 
-h1,
+.bold {
+  font-weight: bold;
+}
+
+.small {
+  font-size: var(--font-s);
+}
+
+.xsmall {
+  font-size: var(--font-xs);
+}
+
+.bodyL {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
+h1 {
+  font-family: "Nova Mono", monospace;
+  color: var(--color-text-80);
+  margin: 0;
+  font-size: 3rem;
+}
 h2 {
   font-family: "Nova Mono", monospace;
+  color: var(--color-text-70);
+  margin: 0;
+  font-size: 2rem;
 }
 
+h3 {
+  font-family: "Nova Mono", monospace;
+  color: var(--color-text-60);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Nova Mono", monospace;
+  color: var(--color-text-50);
+  font-size: 1.25rem;
+  margin: 0;
+}
 /* Breakpoints */
 /* SM */
 
