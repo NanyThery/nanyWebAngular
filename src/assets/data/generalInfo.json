@@ -2,15 +2,15 @@
   "social": [
     {
       "type": "linkedin",
-      "URL": "https://linkedin.com/in/nadinethery"
+      "url": "https://linkedin.com/in/nadinethery"
     },
     {
       "type": "github",
-      "URL": "https://github.com/NanyThery"
+      "url": "https://github.com/NanyThery"
     },
     {
       "type": "email",
-      "URL": "mailto:nadinethery@gmail.com"
+      "url": "mailto:nadinethery@gmail.com"
     }
   ],
   "skills": [
@@ -132,7 +132,7 @@
       "score": 4
     },
     {
-      "name": "Spanish",
+      "name": "Spanish (native)",
       "score": 5
     }
   ],
@@ -145,7 +145,7 @@
       "finishDate": "2023-06-01",
       "institution": {
         "name": "Google by Coursera",
-        "URL": "https://www.coursera.org/account/accomplishments/professional-cert/9LJ43HACM8CK?utm_product=prof"
+        "url": "https://www.coursera.org/account/accomplishments/professional-cert/9LJ43HACM8CK?utm_product=prof"
       }
     },
     {
@@ -155,7 +155,7 @@
       "finishDate": "2021-06-01",
       "institution": {
         "name": "Ilerna Online",
-        "URL": "https://www.ilerna.es/"
+        "url": "https://www.ilerna.es/"
       }
     },
     {
@@ -165,7 +165,7 @@
       "description": "Extraordinary award for the best academic record of the 2012/2013 promotion.",
       "institution": {
         "name": "Universidad Miguel Hernández de Elche",
-        "URL": "https://www.umh.es/"
+        "url": "https://www.umh.es/"
       }
     }
   ]

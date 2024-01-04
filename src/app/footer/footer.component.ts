@@ -28,7 +28,7 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
         </div>
         <div class="footer-social">
           @for(item of social; track item.type) {
-          <a href="{{ item.URL }}" target="_blank">
+          <a href="{{ item.url }}" target="_blank">
             <ng-icon
               [name]="getIconName(item.type)"
               color="#231942"

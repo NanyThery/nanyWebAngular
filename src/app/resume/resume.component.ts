@@ -5,6 +5,7 @@ import { ButtonComponent } from '../button/button.component';
 import { ResumeExperienceComponent } from '../resume-experience/resume-experience.component';
 import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.component';
 import { LanguagesComponent } from '../languages/languages.component';
+import { EducationSectionComponent } from '../education-section/education-section.component';
 
 @Component({
   selector: 'app-resume',
@@ -14,6 +15,7 @@ import { LanguagesComponent } from '../languages/languages.component';
     ResumeExperienceComponent,
     TechnicalSkillsComponent,
     LanguagesComponent,
+    EducationSectionComponent,
   ],
   template: `
     <div class="resume-paper">
@@ -25,6 +27,7 @@ import { LanguagesComponent } from '../languages/languages.component';
         </div>
         <div class="resume-col">
           <app-resume-experience [jobs]="jobs" class="col-section" />
+          <app-education-section class="col-section" [education]="education" />
         </div>
       </div>
       <app-button title="Download CV" />
@@ -56,6 +59,7 @@ import { LanguagesComponent } from '../languages/languages.component';
       display: flex; 
       flex: 1;
       flex-direction: column;
+      gap: 24px; 
     }
 
     @media screen and (max-width: 768px) {
@@ -73,6 +77,7 @@ import { LanguagesComponent } from '../languages/languages.component';
 export class ResumeComponent {
   jobs = jobsJson.jobs || null;
   languages = generalInfoJson.languages || null;
+  education = generalInfoJson.studies || null;
   skills = {
     technologies: generalInfoJson.skills || [],
     otherSkills: generalInfoJson.otherSkills || [],
