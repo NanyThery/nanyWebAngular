@@ -45,7 +45,8 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
   footer {
     width: 100%; 
     display: flex; 
-    position: fixed; 
+    position: relative;
+    overflow:hidden;
     bottom: 0;
     left:0;
   }
