@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Inject, Input } from '@angular/core';
 import { SkillStarsComponent } from '../skill-stars/skill-stars.component';
+import { SortServiceService } from '../sort-service.service';
 
 interface Skill {
   name: string;
@@ -49,37 +50,15 @@ export class TechnicalSkillsComponent {
     otherSkills: [],
   };
 
-  sortSkills(skills: Skill[], order: 'score' | 'name' = 'name'): Skill[] {
-    const unsorted = new Array(...skills);
-    // sort by name
-
-    if (order === 'score') {
-      return unsorted.sort(function (a, b) {
-        if (a.score > b.score) {
-          return -1;
-        }
-        if (a.score < b.score) {
-          return 1;
-        }
-        return 0;
-      });
-    } else {
-      return unsorted.sort(function (a, b) {
-        if (a.name < b.name) {
-          return -1;
-        }
-        if (a.name > b.name) {
-          return 1;
-        }
-        return 0;
-      });
-    }
-  }
+  constructor(private sortService: SortServiceService) {}
 
   ngOnInit(): void {
     this.sortedSkills = {
-      technologies: this.sortSkills(this.skills.technologies, 'name'),
-      otherSkills: this.sortSkills(this.skills.otherSkills, 'name'),
+      technologies: this.sortService.sortSkills(
+        this.skills.technologies,
+        'name'
+      ),
+      otherSkills: this.sortService.sortSkills(this.skills.otherSkills, 'name'),
     };
   }
 }

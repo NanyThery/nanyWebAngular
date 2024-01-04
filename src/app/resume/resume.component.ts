@@ -4,6 +4,7 @@ import * as generalInfoJson from '../../assets/data/generalInfo.json';
 import { ButtonComponent } from '../button/button.component';
 import { ResumeExperienceComponent } from '../resume-experience/resume-experience.component';
 import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.component';
+import { LanguagesComponent } from '../languages/languages.component';
 
 @Component({
   selector: 'app-resume',
@@ -12,6 +13,7 @@ import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.c
     ButtonComponent,
     ResumeExperienceComponent,
     TechnicalSkillsComponent,
+    LanguagesComponent,
   ],
   template: `
     <div class="resume-paper">
@@ -19,6 +21,7 @@ import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.c
       <div class="resume-content">
         <div class="resume-col">
           <app-technical-skills class="col-section" [skills]="skills" />
+          <app-languages class="col-section" [languages]="languages" />
         </div>
         <div class="resume-col">
           <app-resume-experience [jobs]="jobs" class="col-section" />
@@ -69,6 +72,7 @@ import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.c
 })
 export class ResumeComponent {
   jobs = jobsJson.jobs || null;
+  languages = generalInfoJson.languages || null;
   skills = {
     technologies: generalInfoJson.skills || [],
     otherSkills: generalInfoJson.otherSkills || [],

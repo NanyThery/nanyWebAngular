@@ -124,15 +124,15 @@
   ],
   "languages": [
     {
-      "fullName": "Catalan / Valencian",
+      "name": "Catalan / Valencian",
       "score": 4
     },
     {
-      "fullName": "English",
+      "name": "English",
       "score": 4
     },
     {
-      "fullName": "Spanish",
+      "name": "Spanish",
       "score": 5
     }
   ],
