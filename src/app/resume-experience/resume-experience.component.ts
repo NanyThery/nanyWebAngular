@@ -8,9 +8,15 @@ import { ExperienceCardComponent } from '../experience-card/experience-card.comp
   imports: [ExperienceCardComponent],
   template: `
     <h3>Experience</h3>
+
     <div class="resume-experience-container">
-      @for ( job of jobs; track $index) {
+      @for ( job of jobs.dev; track $index) {
       <app-experience-card [job]="job"></app-experience-card>
+      } @for ( job of jobs.notDev; track $index) {
+      <app-experience-card
+        [job]="job"
+        [notDetailed]="true"
+      ></app-experience-card>
       }
     </div>
   `,
@@ -20,8 +26,11 @@ import { ExperienceCardComponent } from '../experience-card/experience-card.comp
     flex-direction: column;
     gap: 24px;
   }
+  h3 {
+    margin-bottom: 16px;
+  }
   `,
 })
 export class ResumeExperienceComponent {
-  @Input() jobs: Job[] = [];
+  @Input() jobs: { dev: Job[]; notDev: Job[] } = { dev: [], notDev: [] };
 }

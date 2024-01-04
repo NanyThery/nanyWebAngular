@@ -15,8 +15,8 @@
     #ededf4 52.08%,
     #fff 97.92%
   );
-  --font-xs: 0.75rem;
-  --font-s: 0.875rem;
+  --font-xs: 0.75em;
+  --font-s: 0.875em;
   --primary-font: "DM Sans", sans-serif;
   --secondary-font: "Nova Mono", monospace;
 } /* You can add global styles to this file, and also import other style files */
@@ -43,39 +43,50 @@ body {
 }
 
 .bodyL {
-  font-size: 1.1rem;
+  font-size: 1.1em;
+}
+
+html {
+  font-size: 16px;
 }
 
 p {
-  font-size: 16px;
   margin: 0;
 }
+
 h1 {
   font-family: "Nova Mono", monospace;
   color: var(--color-text-80);
   margin: 0;
-  font-size: 3rem;
+  font-size: 3em;
 }
 h2 {
   font-family: "Nova Mono", monospace;
   color: var(--color-text-70);
   margin: 0;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 h3 {
   font-family: "Nova Mono", monospace;
   color: var(--color-text-60);
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin: 0;
 }
 
 h4 {
   font-family: "Nova Mono", monospace;
   color: var(--color-text-50);
-  font-size: 1.25rem;
+  font-size: 1.25em;
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 /* Breakpoints */
 /* SM */
 

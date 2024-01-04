@@ -32,7 +32,7 @@ import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.c
     .resume-paper {
       display: flex;
       flex-flow: column;
-      gap: 32px;
+      gap: 50px;
       align-items: center;
       border-radius: 4px;  
       width: 100%; 
@@ -59,10 +59,14 @@ import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.c
         flex-direction: column-reverse;
        
       }
+      .resume-paper {
+        padding: 20px 30px; 
+        gap: 32px; 
+      }
     }
   `,
 })
 export class ResumeComponent {
-  jobs = jobsJson.jobs || [];
+  jobs = jobsJson.jobs || null;
   skills = generalInfoJson.skills || [];
 }
