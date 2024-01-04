@@ -46,6 +46,7 @@ import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.c
     .resume-content {
       width: 100%;
       display: flex; 
+      gap: 36px; 
       justify-content: space-between;
     }
     .resume-col {
@@ -68,5 +69,8 @@ import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.c
 })
 export class ResumeComponent {
   jobs = jobsJson.jobs || null;
-  skills = generalInfoJson.skills || [];
+  skills = {
+    technologies: generalInfoJson.skills || [],
+    otherSkills: generalInfoJson.otherSkills || [],
+  };
 }

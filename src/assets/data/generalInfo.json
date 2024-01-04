@@ -24,17 +24,21 @@
     },
     {
       "name": "NextJS",
-      "score": 3
+      "score": 3.5
     },
     {
       "name": "Remix",
-      "score": 3
+      "score": 4
     },
     {
       "name": "Angular",
       "score": 3
     },
-    { "name": "Typescript", "score": 2 },
+    {
+      "name": "Javascript (Vanilla)",
+      "score": 5
+    },
+    { "name": "Typescript", "score": 2.5 },
     {
       "name": "Liquid (Shopify)",
       "score": 5
@@ -47,34 +51,14 @@
       "name": "REST APIs",
       "score": 5
     },
-    {
-      "name": "Firebase",
-      "description": "Remote Config, Functions, Firestore",
-      "score": 3
-    },
-    {
-      "name": "Google Cloud",
-      "description": "Cloud Functions, Cloud Run",
-      "score": 3
-    },
+
     {
       "name": "NodeJS",
       "description": "I can build an API!",
       "score": 3
     }
   ],
-  "other-skills": [
-    {
-      "name": "UX/UI Design",
-      "score": 3
-    },
-    {
-      "name": "Documentation & Technical Writing",
-      "description": "I love sharing knowledge!",
-      "score": 5
-    }
-  ],
-  "tools-platforms": [
+  "otherSkills": [
     {
       "name": "VSCode",
       "score": 5
@@ -89,13 +73,30 @@
     },
     {
       "name": "Figma",
-      "description": "I can build prototypes!",
       "score": 4
     },
     {
       "name": "Shopify Ecosystem",
-      "description": "I can build a store with Liquid or headless, build apps with Shopify APIs, or private checkout extensions",
       "score": 4
+    },
+    {
+      "name": "Firebase",
+      "description": "Remote Config, Functions, Firestore",
+      "score": 3
+    },
+    {
+      "name": "Google Cloud",
+      "description": "Cloud Functions, Cloud Run",
+      "score": 3
+    },
+    {
+      "name": "UX/UI Design",
+      "score": 3
+    },
+    {
+      "name": "Documentation & Technical Writing",
+      "description": "I love sharing knowledge!",
+      "score": 5
     }
   ],
 
