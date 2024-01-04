@@ -30,6 +30,9 @@ interface Skill {
     </div>
   `,
   styles: `
+  h3 {
+    margin-bottom: 16px;
+  }
   .skills-section {
     display: flex;
     flex-direction: column;

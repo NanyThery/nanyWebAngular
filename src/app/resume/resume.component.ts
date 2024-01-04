@@ -6,6 +6,7 @@ import { ResumeExperienceComponent } from '../resume-experience/resume-experienc
 import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.component';
 import { LanguagesComponent } from '../languages/languages.component';
 import { EducationSectionComponent } from '../education-section/education-section.component';
+import { SoftSkillsSectionComponent } from '../soft-skills-section/soft-skills-section.component';
 
 @Component({
   selector: 'app-resume',
@@ -16,18 +17,20 @@ import { EducationSectionComponent } from '../education-section/education-sectio
     TechnicalSkillsComponent,
     LanguagesComponent,
     EducationSectionComponent,
+    SoftSkillsSectionComponent,
   ],
   template: `
     <div class="resume-paper">
       <h1>Resume</h1>
       <div class="resume-content">
         <div class="resume-col">
-          <app-technical-skills class="col-section" [skills]="skills" />
-          <app-languages class="col-section" [languages]="languages" />
+          <app-technical-skills [skills]="skills" />
+          <app-soft-skills-section [softSkills]="softSkills" />
+          <app-languages [languages]="languages" />
         </div>
         <div class="resume-col">
-          <app-resume-experience [jobs]="jobs" class="col-section" />
-          <app-education-section class="col-section" [education]="education" />
+          <app-resume-experience [jobs]="jobs" />
+          <app-education-section [education]="education" />
         </div>
       </div>
       <app-button title="Download CV" />
@@ -78,6 +81,7 @@ export class ResumeComponent {
   jobs = jobsJson.jobs || null;
   languages = generalInfoJson.languages || null;
   education = generalInfoJson.studies || null;
+  softSkills = generalInfoJson.softSkills || null;
   skills = {
     technologies: generalInfoJson.skills || [],
     otherSkills: generalInfoJson.otherSkills || [],

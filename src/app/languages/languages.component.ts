@@ -14,6 +14,9 @@ import { SkillStarsComponent } from '../skill-stars/skill-stars.component';
     }
   </div>`,
   styles: `
+  h3 {
+    margin-bottom: 16px;
+  }
   .skills-section {
     display: flex;
     flex-direction: column;

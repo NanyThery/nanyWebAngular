@@ -14,9 +14,7 @@ import { Study } from '../shared/study.interface';
             {{ study.name }}
           </p>
           <p class="education-card-secondary-text">
-            <a href="{{ study.institution.url }}" target="_blank">
-              {{ study.institution.name }}</a
-            >
+            {{ study.institution.name }}
           </p>
           <p class="education-card-terciary-text">
             {{ study.startDate }} -
