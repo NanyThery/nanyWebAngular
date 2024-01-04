@@ -13,10 +13,7 @@ import { ExperienceCardComponent } from '../experience-card/experience-card.comp
       @for ( job of jobs.dev; track $index) {
       <app-experience-card [job]="job"></app-experience-card>
       } @for ( job of jobs.notDev; track $index) {
-      <app-experience-card
-        [job]="job"
-        [notDetailed]="true"
-      ></app-experience-card>
+      <app-experience-card [job]="job"></app-experience-card>
       }
     </div>
   `,

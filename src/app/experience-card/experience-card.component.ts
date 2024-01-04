@@ -116,5 +116,4 @@ import { ionBusinessOutline } from '@ng-icons/ionicons';
 export class ExperienceCardComponent {
   @Input() job: Job | null = null;
   @Input() withImage: boolean = true;
-  @Input() notDetailed: boolean = false;
 }
