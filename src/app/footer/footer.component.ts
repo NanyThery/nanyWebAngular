@@ -1,18 +1,11 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import * as generalInfo from '../../assets/data/generalInfo.json';
-import {
-  ionAtCircle,
-  ionLogoGithub,
-  ionLogoLinkedin,
-} from '@ng-icons/ionicons';
-import { NgIconComponent, provideIcons } from '@ng-icons/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [NgOptimizedImage, NgIconComponent],
-  providers: [provideIcons({ ionLogoGithub, ionLogoLinkedin, ionAtCircle })],
+  imports: [NgOptimizedImage],
+
   template: `
     <footer>
       <div class="footer-image">
@@ -26,17 +19,7 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
             <span class="bold">Angular</span> and lots of ❤️🎉🐶🐶🐱
           </p>
         </div>
-        <div class="footer-social">
-          @for(item of social; track item.type) {
-          <a href="{{ item.url }}" target="_blank">
-            <ng-icon
-              [name]="getIconName(item.type)"
-              color="#231942"
-              size="24"
-            ></ng-icon>
-          </a>
-          }
-        </div>
+
         <p>© {{ getCurrentYear() }} Nadine Thêry</p>
       </div>
     </footer>
@@ -73,13 +56,9 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
     font-size: var(--font-xs); 
     padding: 0 20px; 
     background-color: rgba(255, 255, 255, 0.5);
-    margin: 10px;
+    margin: 10px 10px 30px 10px;
     border-radius: 10px;  
     text-align: center;
-  }
-  .footer-social {
-    display: flex; 
-    gap: 24px; 
   }
   .footer-content p {
     font-size: var(--font-xs)
@@ -116,19 +95,6 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
   `,
 })
 export class FooterComponent {
-  social = generalInfo.social;
-  getIconName(name: string) {
-    switch (name) {
-      case 'linkedin':
-        return 'ionLogoLinkedin';
-      case 'github':
-        return 'ionLogoGithub';
-      case 'email':
-        return 'ionAtCircle';
-      default:
-        return 'link';
-    }
-  }
   getCurrentYear() {
     return new Date().getFullYear();
   }

@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "title": "TeachT3ch Web",
+      "tech": ["NextJs", "Vercel", "Formik", "Styled-Components"],
+      "description": "Website for a non-profit organization where I volunteer. We teach basic programming skills in Summer course to help to transform or change their career paths. The design was made by the Yolanda Tamayo, and I built it along with other members of the organization.",
+      "keyFeatures": "One of they key features I built here are the dynamic forms used for registration of the students and volunteers. They don't require to update the code of the form when there is a change, since it uses a JSON file as a guide to render the necessary fields. Helping the organization to be more agile when there is a change in the requirements.",
+      "keywords": ["Dynamic forms", "Website"],
+      "url": "https://teacht3ch.com/",
+      "img": "teacht3ch.jpg"
+    },
+    {
+      "title": "La Recochinera",
+      "tech": ["React"],
+      "description": "This is a feature of tthe website I built for our (me & my husband's) boardgames youtube channel (in Spanish). It's a simple soundpad app you can use directly from the website to play sounds and mock to your friends while playing boardgames. I also coded the website, but it's pretty simple and I don't think it's worth to mention it here.",
+      "keyFeatures": "It can be used online and no need to download any app. It's responsive and can be used from any device.",
+      "keywords": ["Soundpad", "Web App", "SPA"],
+      "url": "https://somosdados.com/recochinera",
+      "img": "recochinera.jpg"
+    },
+    {
+      "title": "Choose Your Own Adventure App",
+      "tech": ["React", "Vercel"],
+      "description": "Simple app to create interactive stories like Choose You Own Adventure books. I started this project idea to try different and new technologies. This was aimed to be an example for our students at Teacht3ch, since this same game was first build on Vanilla Javascript, with a very basic logic.",
+      "keyFeatures": "Creates the `books` based on JSON files. So you just need to add a new JSON to add a new story to your collection. I enjoyed a lot reproducing the bookcovers in CSS!",
+      "keywords": ["Interactive Story", "Web App", "SPA", "Game"],
+      "url": "https://etpa-react.nanythery.vercel.app/",
+      "repo": "https://github.com/NanyThery/ETPA-react",
+      "img": "etpa-react.jpg"
+    },
+    {
+      "title": "Meal-O-Saur",
+      "tech": ["VueJs", "NuxtJs", "Firestore", "Firebase", "Vuetify"],
+      "description": "I built this SSR app on 2020 as my final project for my Professional Certificate (FP DAW). It's an app for meal planning, and recipe notebook. It uses Firebase as a backend, with Firestore as DDBB, user authentication and hosting.",
+      "keyFeatures": "Creates the `books` based on JSON files. So you just need to add a new JSON to add a new story to your collection. I enjoyed a lot reproducing the bookcovers in CSS!",
+      "keywords": ["Interactive Story", "Web App", "SPA", "Game"],
+      "url": "https://mealosaur.nadinethery.com/",
+      "repo": "https://github.com/NanyThery/ETPA-react",
+      "img": "mealosaur.jpg"
+    },
+    {
+      "title": "Umamichef Gift Picker",
+      "tech": ["React", "OpenAI", "Vercel", "Shopify APIs"],
+      "description": "We built this side project with my colleagues at Umamicart as a proof of concept and a way to try and apply the OpenAI API. It's a simple app that helps you pick gifts from Umamicart's catalogue based on the preferences and budget defined. I was in charge of (the very basic) UX/UI design and frontend build part of the project. This is still a Work In Progress.",
+      "keywords": ["AI", "Web App", "WIP", "Game"],
+      "img": "giftpicker.jpg"
+    }
+  ]
+}

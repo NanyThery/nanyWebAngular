@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { ResumeComponent } from '../resume/resume.component';
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-body-wrapper',
   standalone: true,
-  imports: [ResumeComponent],
+  imports: [ResumeComponent, ContactComponent],
   template: `
     <div class="body-wrapper-container">
       <app-resume class="body-wrapper-section" />
+      <app-contact class="body-wrapper-section" />
     </div>
   `,
   styles: `
@@ -19,6 +21,7 @@ import { ResumeComponent } from '../resume/resume.component';
 .body-wrapper-section {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px; 
 }
   `,
 })

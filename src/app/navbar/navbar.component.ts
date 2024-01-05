@@ -204,16 +204,8 @@ export class NavbarComponent {
       link: '#resume-section',
     },
     {
-      title: 'About Me',
-      link: '#',
-    },
-    {
-      title: 'Projects',
-      link: '#',
-    },
-    {
       title: 'Contact',
-      link: '#',
+      link: '#contact-section',
     },
   ];
 
