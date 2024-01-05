@@ -31,8 +31,8 @@ import { Skill } from '../shared/skill.interface';
     display: flex; 
   }
   .soft-skill-title {
-    max-width: 30%;
-    min-width: 30%; 
+    max-width: 35%;
+    min-width: 35%; 
   
     ;
   }
