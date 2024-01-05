@@ -183,6 +183,7 @@ import { Component } from '@angular/core';
       display: flex;
     }
   }
+
   `,
 })
 export class NavbarComponent {

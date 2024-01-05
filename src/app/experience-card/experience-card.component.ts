@@ -111,6 +111,12 @@ import { ionBusinessOutline } from '@ng-icons/ionicons';
       .experience-card-multiple-roles > div {
         margin-left: 12px; 
       }
+
+      @media print {
+        .experience-card-image {
+          display: none; 
+        }
+      }
       `,
 })
 export class ExperienceCardComponent {

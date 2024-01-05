@@ -2,14 +2,17 @@
   "social": [
     {
       "type": "linkedin",
+      "user": "in/nadinethery",
       "url": "https://linkedin.com/in/nadinethery"
     },
     {
       "type": "github",
+      "user": "NanyThery",
       "url": "https://github.com/NanyThery"
     },
     {
       "type": "email",
+      "user": "nadinethery@gmail.com",
       "url": "mailto:nadinethery@gmail.com"
     }
   ],

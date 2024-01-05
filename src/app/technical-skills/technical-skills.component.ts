@@ -53,7 +53,13 @@ export class TechnicalSkillsComponent {
     otherSkills: [],
   };
 
+  // This is the constructor of the class. It runs when the component is created. This is JS class feature, not Angular's.
+  //There's only one constuctor per class, and it's the place to provide the dependencies of the class (in this case, the SortServiceService).
+  // A constructor would be an ideal place to inject dependencies, but not handle them. That's why we're not calling the sortSkills method here.
+
   constructor(private sortService: SortServiceService) {}
+
+  // Once in the constructor, the service is available to the class through the this.sortService property.
 
   ngOnInit(): void {
     this.sortedSkills = {

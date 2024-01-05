@@ -1,4 +1,5 @@
 export interface Job {
+  print: boolean;
   organization: {
     name: string;
     logo?: string;

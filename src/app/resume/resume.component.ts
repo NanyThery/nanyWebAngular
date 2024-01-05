@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import * as jobsJson from '../../assets/data/jobs.json';
 import * as generalInfoJson from '../../assets/data/generalInfo.json';
 import { ButtonComponent } from '../button/button.component';
@@ -7,6 +7,7 @@ import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.c
 import { LanguagesComponent } from '../languages/languages.component';
 import { EducationSectionComponent } from '../education-section/education-section.component';
 import { SoftSkillsSectionComponent } from '../soft-skills-section/soft-skills-section.component';
+import { CvHeaderComponent } from '../cv-header/cv-header.component';
 
 @Component({
   selector: 'app-resume',
@@ -18,10 +19,16 @@ import { SoftSkillsSectionComponent } from '../soft-skills-section/soft-skills-s
     LanguagesComponent,
     EducationSectionComponent,
     SoftSkillsSectionComponent,
+    CvHeaderComponent,
   ],
   template: `
-    <div class="resume-paper">
+    <div id="resume-section" class="resume-paper">
+      @if (header) {
+      <app-cv-header />
+      } @else {
       <h1>Resume</h1>
+      }
+
       <div class="resume-content">
         <div class="resume-col">
           <app-technical-skills [skills]="skills" />
@@ -39,6 +46,7 @@ import { SoftSkillsSectionComponent } from '../soft-skills-section/soft-skills-s
   styles: `
     
     .resume-paper {
+      scroll-margin-top: 60px;
       display: flex;
       flex-flow: column;
       gap: 50px;
@@ -75,9 +83,23 @@ import { SoftSkillsSectionComponent } from '../soft-skills-section/soft-skills-s
         gap: 32px; 
       }
     }
+    @media print {
+      app-button {
+        display: none;
+      }
+      app-soft-skills-section, app-education-section {
+        margin-top: 30px; 
+        page-break-before: always; 
+      }
+      .resume-paper {
+        padding: 30px 60px; 
+        
+      }
+    }
   `,
 })
 export class ResumeComponent {
+  @Input() header: boolean = false;
   jobs = jobsJson.jobs || null;
   languages = generalInfoJson.languages || null;
   education = generalInfoJson.studies || null;

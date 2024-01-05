@@ -2,6 +2,7 @@
   "jobs": {
     "dev": [
       {
+        "print": true,
         "organization": {
           "name": "Umamicart Ltd",
           "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/dcabcdee-18c6-49bf-83cd-2f077f04a193_linkedin-photo-34648.linkedin-photo-34648"
@@ -24,6 +25,7 @@
         ]
       },
       {
+        "print": true,
         "organization": {
           "name": "urbanData Analytics (Alantra Group)",
           "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/21e7d2a6-f048-4437-9c55-51e1a212796f_linkedin-photo-34648.linkedin-photo-34648"
@@ -39,6 +41,7 @@
         ]
       },
       {
+        "print": true,
         "organization": {
           "name": "Sonneil Homes",
           "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/ac1a47b5-6804-4187-bbb6-e63c1e1db7ee_linkedin-photo-34648.linkedin-photo-34648"
@@ -56,6 +59,7 @@
     ],
     "notDev": [
       {
+        "print": true,
         "organization": {
           "name": "Sonneil Homes and More",
           "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/ac1a47b5-6804-4187-bbb6-e63c1e1db7ee_linkedin-photo-34648.linkedin-photo-34648"
@@ -69,6 +73,7 @@
         ]
       },
       {
+        "print": false,
         "organization": {
           "name": "Solvia (Sabadell Bank Group)",
           "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/8bc1ac06-f757-4dde-8086-10b2f6bf71b8_linkedin-photo-34648.linkedin-photo-34648"
@@ -82,6 +87,7 @@
         ]
       },
       {
+        "print": false,
         "organization": {
           "name": "D.I.A. Desarrollos informáticos para la Administración"
         },
