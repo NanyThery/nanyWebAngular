@@ -18,14 +18,14 @@ interface Skill {
       <h4>Technologies</h4>
 
       @for (skill of sortedSkills.technologies; track skill.name) {
-      <app-skill-stars [skill]="skill" />
+      <app-skill-stars [skill]="skill" variant="circle" />
       }
     </div>
 
     <div class="skills-section">
       <h4>Tools, Platforms & Others</h4>
       @for (skill of sortedSkills.otherSkills; track skill.name) {
-      <app-skill-stars [skill]="skill" />
+      <app-skill-stars [skill]="skill" variant="circle" />
       }
     </div>
   `,

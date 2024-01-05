@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -10,12 +10,11 @@ import { FooterComponent } from './footer/footer.component';
   imports: [CommonModule, RouterOutlet, NavbarComponent, FooterComponent],
   template: `<main class="main">
     <app-navbar />
-    <router-outlet></router-outlet>,
+    <router-outlet></router-outlet>
     <app-footer />
-  </main> `,
+  </main>`,
   styles: `
-  
-  
+   
   @media print {
     app-navbar, app-footer {
       display: none; 

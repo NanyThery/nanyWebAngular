@@ -10,7 +10,7 @@ import { SkillStarsComponent } from '../skill-stars/skill-stars.component';
   template: ` <div class="skills-section">
     <h3>Languages</h3>
     @for (skill of sortedLanguages; track skill.name) {
-    <app-skill-stars [skill]="skill" />
+    <app-skill-stars [skill]="skill" variant="circle" />
     }
   </div>`,
   styles: `
