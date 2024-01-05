@@ -23,6 +23,7 @@
     "@ng-icons/ionicons": "^26.3.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "vercel": "^33.0.2",
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
