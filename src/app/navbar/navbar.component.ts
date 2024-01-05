@@ -5,13 +5,13 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, CommonModule],
   animations: [
     trigger('openClose', [
       state('true', style({ top: 0, left: 0 })),
@@ -30,7 +30,7 @@ import { Component } from '@angular/core';
     ]),
   ],
   template: `
-    <div class="container">
+    <div class="container" [ngClass]="{ scrolled: isScrolled }">
       <nav class="menu-desktop">
         <a class="menu-logo-container" href="/">
           <img ngSrc="assets/logo-nt.png" height="48" width="48" />
@@ -90,6 +90,11 @@ import { Component } from '@angular/core';
     top: 0; 
     left: 0;
     z-index: 99; 
+  }
+  .scrolled {
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 10px 1px var(--color-rgb-text-50);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   }
   nav {
     
@@ -182,12 +187,17 @@ import { Component } from '@angular/core';
     .menu-mobile {
       display: flex;
     }
+    .scrolled {
+    background-color: transparent;
+    box-shadow: none;
+  }
   }
 
   `,
 })
 export class NavbarComponent {
   isMenuOpen = false;
+  isScrolled: boolean = false;
   menuItems = [
     {
       title: 'Resume',
@@ -209,5 +219,13 @@ export class NavbarComponent {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    let element = document.querySelector('main');
+    if (element) {
+      this.isScrolled = window.scrollY > 0;
+    }
   }
 }
