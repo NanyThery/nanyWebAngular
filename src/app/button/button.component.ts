@@ -8,8 +8,11 @@ import { ionDownloadOutline } from '@ng-icons/ionicons';
   imports: [NgIconComponent],
   providers: [provideIcons({ ionDownloadOutline })],
   template: `
-    <button [value]="value">
-      <ng-icon name="ionDownloadOutline" size="24"></ng-icon> {{ title }}
+    <button [value]="value" (click)="btnAction()">
+      @if(icon) {
+      <ng-icon [name]="icon" size="24"></ng-icon>
+      }
+      {{ title }}
     </button>
   `,
   styles: `
@@ -39,4 +42,6 @@ import { ionDownloadOutline } from '@ng-icons/ionicons';
 export class ButtonComponent {
   @Input() title = 'Button';
   @Input() value = 'Button';
+  @Input() icon: string | undefined;
+  @Input() btnAction = () => {};
 }

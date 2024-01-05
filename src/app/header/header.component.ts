@@ -1,11 +1,12 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
+import { DownloadBtnComponent } from '../download-btn/download-btn.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgOptimizedImage, ButtonComponent],
+  imports: [NgOptimizedImage, ButtonComponent, DownloadBtnComponent],
   template: `
     <header>
       <div class="container">
@@ -13,7 +14,7 @@ import { ButtonComponent } from '../button/button.component';
           <div class="hero-text">
             <h1>Nadine Thêry</h1>
             <h2>Frontend Developer</h2>
-            <app-button title="Download CV"></app-button>
+            <app-download-btn></app-download-btn>
           </div>
           <div class="hero-background">
             <div class="hero-background-layer"></div>
@@ -37,7 +38,7 @@ import { ButtonComponent } from '../button/button.component';
     </header>
   `,
   styles: `
-  app-button {
+  app-download-btn {
     margin-top: 32px;
   }
   .container {

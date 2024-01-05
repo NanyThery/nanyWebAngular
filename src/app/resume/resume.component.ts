@@ -8,18 +8,19 @@ import { LanguagesComponent } from '../languages/languages.component';
 import { EducationSectionComponent } from '../education-section/education-section.component';
 import { SoftSkillsSectionComponent } from '../soft-skills-section/soft-skills-section.component';
 import { CvHeaderComponent } from '../cv-header/cv-header.component';
+import { DownloadBtnComponent } from '../download-btn/download-btn.component';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
   imports: [
-    ButtonComponent,
     ResumeExperienceComponent,
     TechnicalSkillsComponent,
     LanguagesComponent,
     EducationSectionComponent,
     SoftSkillsSectionComponent,
     CvHeaderComponent,
+    DownloadBtnComponent,
   ],
   template: `
     <div id="resume-section" class="resume-paper">
@@ -40,7 +41,7 @@ import { CvHeaderComponent } from '../cv-header/cv-header.component';
           <app-education-section [education]="education" />
         </div>
       </div>
-      <app-button title="Download CV" />
+      <app-download-btn />
     </div>
   `,
   styles: `

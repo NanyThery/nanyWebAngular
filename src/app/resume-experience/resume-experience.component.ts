@@ -41,7 +41,7 @@ export class ResumeExperienceComponent {
   constructor(private route: ActivatedRoute) {}
   ngOnInit(): void {
     this.route.url.subscribe((url) => {
-      if (url[0].path === 'print-cv') {
+      if (url[0]?.path === 'print-cv') {
         this.isPrintView = true;
       }
     });

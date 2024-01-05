@@ -201,7 +201,7 @@ export class NavbarComponent {
   menuItems = [
     {
       title: 'Resume',
-      link: '#',
+      link: '#resume-section',
     },
     {
       title: 'About Me',
