@@ -15,19 +15,18 @@ import { NgOptimizedImage } from '@angular/common';
   providers: [provideIcons({ ionLogoGithub, ionLogoLinkedin, ionAtCircle })],
   template: `
     <div id="contact-section" class="contact-card">
-      <div class="contact-card-header">
-        <h1>Contact me</h1>
-        <div class="social">
-          @for(item of social; track item.type) {
-          <a href="{{ item.url }}" target="_blank">
-            <ng-icon
-              [name]="getIconName(item.type)"
-              color="#231942"
-              size="48"
-            ></ng-icon>
-          </a>
-          }
-        </div>
+      <h1>Contact me</h1>
+      <div class="contact-social">
+        @for(item of social; track item.type) {
+        <a href="{{ item.url }}" target="_blank" class="contact-social__item">
+          <ng-icon
+            [name]="getIconName(item.type)"
+            color="#231942"
+            size="24"
+          ></ng-icon>
+          <span> {{ item.user }} </span>
+        </a>
+        }
       </div>
       <div class="img-wrapper">
         <img ngSrc="assets/show-sticker.png" height="280" width="346" />
@@ -42,14 +41,23 @@ import { NgOptimizedImage } from '@angular/common';
     justify-content: center;
     align-items: center;
     overflow: hidden; 
-
+    flex-flow: column;
   }
 
-  
-  .social {
-    margin-top: 24px;
+  .contact-social {
     display: flex; 
-    gap: 24px; 
+    margin-top: 16px; 
+    gap: 16px; 
+    justify-content: space-around; 
+  }
+  a {
+    text-decoration: none;
+    color: var(--color-text-60);
+  }
+  .contact-social__item {
+    display: flex; 
+    align-items: center;
+    gap: 8px; 
   }
 
   img {
@@ -60,8 +68,9 @@ import { NgOptimizedImage } from '@angular/common';
     flex-flow: column; 
   }
 
-  .social {
+  .contact-social {
     justify-content: center;
+    flex-flow: column; 
     margin-bottom: 24px; 
   }
   img {
