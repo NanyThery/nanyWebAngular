@@ -27,7 +27,7 @@
     },
     {
       "name": "NextJS",
-      "score": 3.5
+      "score": 4
     },
     {
       "name": "Remix",
@@ -41,11 +41,7 @@
       "name": "Javascript (Vanilla)",
       "score": 5
     },
-    { "name": "Typescript", "score": 2.5 },
-    {
-      "name": "Liquid (Shopify)",
-      "score": 5
-    },
+    { "name": "Typescript", "score": 4 },
     {
       "name": "GraphQL & Apollo",
       "score": 4
@@ -62,14 +58,6 @@
     }
   ],
   "otherSkills": [
-    {
-      "name": "VSCode",
-      "score": 5
-    },
-    {
-      "name": "Git",
-      "score": 4
-    },
     {
       "name": "Sentry",
       "score": 3
