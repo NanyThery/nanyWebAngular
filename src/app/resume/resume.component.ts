@@ -85,8 +85,9 @@ import { DownloadBtnComponent } from '../download-btn/download-btn.component';
       }
     }
     @media print {
-      app-button {
+      app-download-btn {
         display: none;
+        visibility: hidden; 
       }
       app-soft-skills-section, app-education-section {
         margin-top: 30px; 

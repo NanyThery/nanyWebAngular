@@ -4,20 +4,6 @@
       {
         "print": true,
         "organization": {
-          "name": "Cavela"
-        },
-        "roles": [
-          {
-            "name": "Senior Frontend Developer",
-            "startDate": "March 2024",
-            "description": "Building a web application for sourcing products. UX study and definition for the first stages of the product. Start-up based in San Francisco, USA.",
-            "skills": ["React", "UX Design", "Design System", "Figma"]
-          }
-        ]
-      },
-      {
-        "print": true,
-        "organization": {
           "name": "Umamicart",
           "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/dcabcdee-18c6-49bf-83cd-2f077f04a193_linkedin-photo-34648.linkedin-photo-34648"
         },
