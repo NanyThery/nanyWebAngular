@@ -4,6 +4,20 @@
       {
         "print": true,
         "organization": {
+          "name": "Localistico Ltd",
+          "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQFaUjv5_HakFA/company-logo_200_200/company-logo_200_200/0/1631337214983?e=1733961600&v=beta&t=TrmHL2GwYZuwx7XxFjOd3rtcdtc4nkC0YxI7Seh0J8U"
+        },
+        "roles": [
+          {
+            "name": "Front-end Developer",
+            "startDate": "June 2024",
+            "skills": ["React", "NextJs", "EmberJs"]
+          }
+        ]
+      },
+      {
+        "print": true,
+        "organization": {
           "name": "Umamicart",
           "logo": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/12/26/dcabcdee-18c6-49bf-83cd-2f077f04a193_linkedin-photo-34648.linkedin-photo-34648"
         },
